@@ -1,0 +1,378 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080b16;
+    color: white;
+}
+
+
+
+header {
+    width: 94%;
+    margin: 15px auto 0;
+    padding: 18px 4%;
+    background: #0d1224;
+    border-radius: 12px;
+    position: sticky;
+    top: 10px;
+    z-index: 1000;
+    border: 1px solid #202945;
+}
+
+#p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#p h1 {
+    font-size: 30px;
+    color: #00e5ff;
+    font-weight: 700;
+}
+
+
+/* Nav Bar */ 
+.container {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 22px;
+}
+
+.container li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.container li a:hover {
+    color: #00e5ff;
+}
+
+
+/* Horizontal Line */
+hr {
+    width: 94%;
+    margin: auto;
+    border: none;
+    height: 1px;
+    background: #202945;
+}
+
+
+/* Common Section */
+section {
+    width: 94%;
+    margin: auto;
+    padding: 30px 4%;
+}
+
+section h1 {
+    color: #00e5ff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* Home Section */
+#home {
+    width: 94%;
+    min-height: 68vh;
+    display: flex;
+    align-items: center;
+    padding: 40px 6%;
+
+    background: radial-gradient(
+        circle at 80% 40%,
+        #172554,
+        #080b16 65%
+    );
+}
+
+#home .section1 {
+    padding-left: 20px;
+}
+
+#home h1 {
+    font-size: 46px;
+    font-weight: 700;
+    color: #00e5ff;
+    margin-bottom: 10px;
+}
+
+#home h1:nth-child(2) {
+    color: #38bdf8;
+}
+
+#home p {
+    color: #cbd5e1;
+    font-size: 15px;
+    line-height: 1.9;
+    margin: 20px 0;
+}
+
+
+/* Hire Me Button */
+button {
+    padding: 13px 30px;
+    background: #00e5ff;
+    border: none;
+    border-radius: 30px;
+    color: #080b16;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 20px #00e5ff55;
+}
+
+
+/* About Section */
+#about {
+    min-height: 250px;
+    text-align: center;
+    background: #0b1020;
+}
+
+#about ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    list-style: none;
+}
+
+#about ul li {
+    background: linear-gradient(
+        120deg,
+        #172554,
+        #102044
+    );
+
+    padding: 20px;
+    border: 1px solid #263654;
+    border-radius: 12px;
+    color: white;
+    transition: 0.3s;
+}
+
+#about ul li:hover {
+    border-color: #00e5ff;
+    transform: translateY(-5px);
+}
+
+
+/* Project Section */
+#project {
+    background: #080b16;
+}
+
+#project h1 {
+    text-align: center;
+}
+
+#project ul {
+    list-style: none;
+}
+
+#project ul li {
+    background: #111a30;
+    padding: 15px 20px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border-left: 4px solid #00e5ff;
+    color: #cbd5e1;
+    transition: 0.3s;
+}
+
+#project ul li:hover {
+    background: #172554;
+    transform: translateX(7px);
+}
+
+
+/* Skills Section */
+#skills {
+    text-align: center;
+    background: #0b1020;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.skill div {
+    background: #111a30;
+    padding: 17px 35px;
+    border: 1px solid #263654;
+    border-radius: 10px;
+    color: #00e5ff;
+    transition: 0.3s;
+}
+
+.skill div:hover {
+    background: #00e5ff;
+    color: #080b16;
+    transform: translateY(-6px);
+}
+
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+#contact a {
+    display: inline-block;
+    text-decoration: none;
+    color: #00e5ff;
+    background: #111a30;
+    padding: 12px 25px;
+    margin: 10px;
+    border: 1px solid #263654;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#contact a:hover {
+    background: #00e5ff;
+    color: #080b16;
+}
+
+
+/* Portfolio Images */
+#portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #0b1020;
+}
+
+#portfolio div {
+    width: 30%;
+    height: 200px;
+    background: rgb(36, 36, 84);
+    border: 1px solid #263654;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+#portfolio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+#portfolio div:hover {
+    transform: translateY(-6px);
+    border-color: #00e5ff;
+}
+
+
+/* Footer */
+footer {
+    width: 94%;
+    margin: auto;
+    padding: 20px;
+    background: #0d1224;
+    text-align: center;
+    color: #94a3b8;
+    border-top: 1px solid #263654;
+    font-size: 14px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    header {
+        width: 96%;
+        padding: 15px;
+    }
+
+    #p {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    #home {
+        min-height: 60vh;
+        padding: 35px 5%;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 25px 5%;
+    }
+
+    #about ul {
+        grid-template-columns: 1fr;
+    }
+
+    .skill {
+        gap: 10px;
+    }
+
+    .skill div {
+        padding: 12px 20px;
+    }
+
+    #portfolio div {
+        width: 45%;
+    }
+}
+
+
+/* Small Screen */
+@media (max-width: 480px) {
+
+    #home h1 {
+        font-size: 27px;
+    }
+
+    .container {
+        gap: 10px;
+    }
+
+    .container li a {
+        font-size: 12px;
+    }
+
+    #portfolio div {
+        width: 100%;
+    }
+
+}
